@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ae60becf-d42c-400d-bf88-7ef7467b44e4" name="ERPClassDiagram" linkedPackageId="63a7ba79-30df-4779-9114-2e795a12aadf" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="f5bf0679-063c-4959-9190-562e7ea902ef">
+      <profileInstance Id="10e895b8-69eb-4abd-9433-e02f69074375" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4c1fda11-7bd4-49a0-a7b4-38bdb34926a7">
+      <profileInstance Id="acaf5046-b337-4d67-ae8f-c7ee461a45c6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d3b8545b-7eef-41d7-97bf-89076629ddce" name="MasterItemType" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3a6513d4-3108-4709-8b5c-0619d9dfbba6" />
+        <ownedAttributesInternal>
+          <property Id="9acaf458-94b6-414d-8718-c7ab51c1767c" name="ItemTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b9f696c0-473a-4550-bb3f-f645cfa6971c" />
+          </property>
+          <property Id="26454660-3eb7-44dc-8264-a0934e1ecb68" name="ItemTypeName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="335ae3fe-538d-42eb-83c5-199a68226608" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cc7604ce-1f0b-4fe0-ab69-17d04830aad9" name="MasterCompany" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="451bb307-4152-4ba6-8058-58cdc397e606" />
+        <ownedAttributesInternal>
+          <property Id="e8bc16e8-446e-4259-88f0-cf3234328358" name="CompanyId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9b9ada3e-a2d0-4651-b6a4-161bd26410e5" />
+          </property>
+          <property Id="63344f1c-2faa-47cf-872c-ea26233567af" name="CompanyName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6756d382-de76-42e6-8de9-608beb38a154" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f744d511-a0d9-4bf0-829e-b0fe79442d8d" name="MasterGodownType" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1f6dfc2e-8f53-482a-848b-19ca60599622" />
+        <ownedAttributesInternal>
+          <property Id="7dce5f64-a457-4382-8809-8854f5c4ec5b" name="GodownTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fe0fd837-9e4a-4f64-a134-fd44fbfa330e" />
+          </property>
+          <property Id="1b694cfb-95f6-4e9b-a0bd-36acdec8be1d" name="GodownTypeName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4f79c52b-f81f-453e-9918-a8c43fdd1e0b" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7e11db72-b835-414a-8489-baa6fee70128" name="MasterItem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e510a829-f6f6-4eb4-81ee-f771bc1590ab" />
+        <ownedAttributesInternal>
+          <property Id="7903ee4b-b1ef-48bd-a9be-2a9d44da15ee" name="ItemId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="02e245a3-ca3a-4b30-b696-6f3f91864891" />
+          </property>
+          <property Id="69ea27cc-08fd-4780-b0b9-980752644e38" name="ItemName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f09b803c-042c-4e26-96bc-079ebeb1edb3" />
+          </property>
+          <property Id="7fad3cb3-fb36-4f85-907d-64cc65cb0ce5" name="ItemTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cf8082cb-af48-4c96-bd66-34e81bdf02f8" />
+          </property>
+          <property Id="6e15cf5a-c6f2-491a-9804-636ffc7b5cab" name="CompanyId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="686f5029-432d-4329-9aeb-cd3108a2847e" />
+          </property>
+          <property Id="f110a597-2e4f-45d6-95b1-63b2a5009998" name="PackingSize" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1d704267-2442-48d1-995a-d5bafbef2c73" />
+          </property>
+          <property Id="09948d69-f0c9-4d65-8538-632e4b7de266" name="MRP" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="11658afe-8e0f-4a31-bb2d-b7749693b48a" />
+          </property>
+          <property Id="14ca4d36-0b28-43a1-aa61-5d466dc9c4ef" name="ReorderLevel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ca88bd3f-bed9-410a-816b-3fb86619b40f" />
+          </property>
+          <property Id="469269a3-a170-43c2-bfe1-e6b47a1dd01d" name="CreditSaleRate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="736ef265-72c8-4c70-ab68-d16e4427d3d6" />
+          </property>
+          <property Id="5ee9dfcc-041f-4570-a396-5fc227bf34fa" name="CashSaleRate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c8ebacc1-3375-4a1e-977d-e0ee4fa7abd1" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1e6cd21b-f615-4b15-9722-3ef2a7291f26" name="MasterStock" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c9ba7c06-f36c-4898-8d95-cccf5cc5768c" />
+        <ownedAttributesInternal>
+          <property Id="b5e236d6-288c-49a3-9924-6d74f03a71b4" name="StockId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5d3f6249-595e-4e57-ac55-5f7e02780d29" />
+          </property>
+          <property Id="b4c7b0ac-d10e-43b8-9393-b41c3b69cca2" name="ItemId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="70931ff6-d2c0-49b3-a5dd-21ad0f127cac" />
+          </property>
+          <property Id="8f8c29ec-9df1-45e5-9771-eabe060581fb" name="Quantity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="37e5e357-2e16-4c2c-854c-c76a61e270b4" />
+          </property>
+          <property Id="5ad74134-7caf-43d5-9c77-ed3019e21a94" name="ItemRate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d2a58717-e2cd-4e04-a5ac-c888e3ed84ca" />
+          </property>
+          <property Id="5c1edad2-530e-46f0-93a8-bc99ff359e73" name="GodownTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4f748015-5878-44bc-bb3d-c76b1987a2e9" />
+          </property>
+          <property Id="6235247c-2bba-4e84-a25e-87220dd9ee55" name="BatchNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="579eb612-050d-4c4b-a94e-619d46abf4ce" />
+          </property>
+          <property Id="6dd5b60e-9979-4d4d-a878-f14cbc3505ab" name="ExpiryDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fae61a0d-fc85-4867-8c34-c270f58736c7" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4fde7bbb-a92b-4866-a7d3-2dc989e9bac8" name="MasterArea" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="485057d7-b86a-41ce-9a69-3d682e781ff0" />
+        <ownedAttributesInternal>
+          <property Id="d7ad9c51-7d56-4916-83bf-8797d25ca32b" name="AreaId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="58ee9e04-c6ea-4e11-8781-1d5bac12d75d" />
+          </property>
+          <property Id="931d1eef-ddb7-4b2f-83ed-9ed174af6d55" name="AreaName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8b0b618a-b130-4c4e-ab36-f2e545f81e3f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="235834ee-2737-4341-9887-8e46cd32ae8d" name="MasterCustomer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="80c61f78-5c90-4803-9cf9-50a582aa94a6" />
+        <ownedAttributesInternal>
+          <property Id="701244e6-60f8-467b-b45a-0dae9c31e916" name="CustomerId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e1c5d08e-cee5-4f33-8856-be01d2d3a38d" />
+          </property>
+          <property Id="52e41284-2db6-4158-a6e4-0c2813391ebc" name="CustomerName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="71440c3d-5872-4617-8c01-ced7bf4274cf" />
+          </property>
+          <property Id="57dab72e-16df-457a-9681-cfcd301f9d67" name="Under" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ecc83bed-16ee-41fe-bc7d-465597ecaa7b" />
+          </property>
+          <property Id="a0bc71aa-aa87-4eff-828c-cdb4a2a2457d" name="AreaId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7379789b-7931-459b-a244-f73235f809ab" />
+          </property>
+          <property Id="33a3c9a0-e3c4-4439-bfc1-5bf7bf17425e" name="OpeningBalance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="49f2f32d-897b-41cb-a8be-45325b6d34f3" />
+          </property>
+          <property Id="d3388da0-70e0-4de2-a21f-5dde564c7feb" name="CreditType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e9eaa9b7-93f7-4ccd-9eca-93ec3f579cf7" />
+          </property>
+          <property Id="aedb73d5-9895-4890-9626-27dea4bcd396" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c315742-d534-40af-869d-c730ef43fb3f" />
+          </property>
+          <property Id="100fc15f-0440-4b78-9924-c5e1d2ffed30" name="PhoneNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c0aec363-c0df-4a1d-850f-70de850dd2aa" />
+          </property>
+          <property Id="82d3a902-a034-4f36-aebc-8a3b9e583e1c" name="MobileNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="75e65304-737f-41b4-be92-7348ae099a7c" />
+          </property>
+          <property Id="13d8d76e-f6ab-4c3e-af2d-00005c307b96" name="CSTRegNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bb13f9d4-fd96-4ad5-b87e-a4a8527e11bd" />
+          </property>
+          <property Id="d44c33f6-210e-43ec-a37c-a65da0ff287b" name="OutOfState" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9870a0fb-1baf-4991-84d8-f092fe6ed16e" />
+          </property>
+          <property Id="b18738d4-3cf9-4243-b5de-72542fd365fc" name="TaxFreeArea" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f22b7e5b-f10e-42dc-8c4d-24876475fa5a" />
+          </property>
+          <property Id="a5286f85-249a-47bd-bb1a-f46ad5f0eed1" name="SalesmanId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ceb66864-aed7-48d7-892c-58bf37a6b47d" />
+          </property>
+          <property Id="2f30cc57-ef9a-4f71-8159-018dcec2806e" name="BankAccNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f59c6e48-7b9d-4461-b09f-c911e7bb6597" />
+          </property>
+          <property Id="7a9e4ade-9ac3-490b-b73f-9e512b9f5dc8" name="BankAccType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="43da21e7-cf3c-47e5-a405-b498fd126bc4" />
+          </property>
+          <property Id="0a7e48fc-5552-4378-ad88-41530488d557" name="Remark" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5558a591-4569-4541-8d98-1e8a52391ff9" />
+          </property>
+          <property Id="09cff1bf-90ca-42f1-812b-efd1f4316474" name="CreditLimit" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e238ae87-ecf1-4bee-93b4-8eb2a9574a09" />
+          </property>
+          <property Id="d6fb89fd-fc42-40e3-a534-545d78e4c949" name="CreditLimitDays" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="22b9757c-3f09-4341-a8e4-335f9a0c1dee" />
+          </property>
+          <property Id="147d06ac-e73e-4627-9b73-caa65f58c34f" name="ContactPersonName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4d31409b-aaef-4ac7-b8fb-5a2bb6dbd8c3" />
+          </property>
+          <property Id="d9c2b727-63bb-4f0e-af00-6e754d978303" name="Phone" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="be9fa782-ba33-4e8b-bd4e-60cd0c81bf3c" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="91576d97-f37c-40a9-b70a-8f41dc350be6" name="MasterSupplier" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e53f350d-dd68-41d7-8d41-b98dd11c9d40" />
+        <ownedAttributesInternal>
+          <property Id="12a872cc-3b9a-4359-afea-cb80ea276746" name="SupplierId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="785b410f-bbe5-424e-8e43-906dcc8d6e2f" />
+          </property>
+          <property Id="10bc6c47-5818-4c6c-8163-2fc8e12feb85" name="SupplierName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="45a127cf-355c-4a48-8ccc-a4b9a643b94f" />
+          </property>
+          <property Id="ba7eb859-e85e-4f5f-9eff-d0fbafbece67" name="Under" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="433a66ea-2c91-44b0-b15b-5b8005bebdeb" />
+          </property>
+          <property Id="89f6db8e-9fb6-46d5-b791-c5f122bb40ec" name="AreaId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b8b6484d-5678-4a25-bfe8-8f0d554b4e1a" />
+          </property>
+          <property Id="a66c38a3-1d5a-465a-a331-a130f1496a94" name="OpeningBalance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fb85c9b6-c358-4c61-bb17-ebd7ccf91bed" />
+          </property>
+          <property Id="28c9d480-2ea6-4a6b-b6a7-749a6dc75b50" name="CreditType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d0a3dd63-8cee-4873-a2de-2e1de4d9bb07" />
+          </property>
+          <property Id="82b5166c-899a-4c7f-8901-a97ecd8f578c" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bb2a7694-8ffc-4c2c-8268-2a4233d414f1" />
+          </property>
+          <property Id="75ed9d08-2bc3-4d99-a5ae-63f2a81b25f3" name="PhoneNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9a711d34-2098-4e40-89cd-3e3abe2ff569" />
+          </property>
+          <property Id="3b978c0a-8393-4019-ab94-a8be7a3f2d9b" name="MobileNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="513771ea-6689-465d-a154-b93f46f348db" />
+          </property>
+          <property Id="2d34fe67-498c-4793-a8bc-9d948449cbe7" name="CSTRegNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4402354d-6606-4a73-bfeb-7ecff41b59a1" />
+          </property>
+          <property Id="da4d3dea-9dad-4930-b1e5-488a6923ee10" name="OutOfState" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ac0976aa-a465-4302-98f1-45b51b108448" />
+          </property>
+          <property Id="f22eaa12-77f1-4051-bbd6-52d363a059d8" name="TaxFreeArea" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="44b1aad4-ab38-46ec-b904-ca62fe136d96" />
+          </property>
+          <property Id="ba59fa09-dba6-470b-bf0d-eb39cca84be5" name="BankAccNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ed9a87c7-4963-4dbf-85c7-5eca98de1b9b" />
+          </property>
+          <property Id="eeb95901-399d-4b2f-81b1-496a8fdeb3d5" name="BankAccType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="63cac2a3-53b1-49d6-9b0c-4238bf762f7b" />
+          </property>
+          <property Id="e3a7c6c7-2713-401c-bd89-742feb265812" name="Remark" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="33aff923-46d6-4ba8-9d35-3344d8582318" />
+          </property>
+          <property Id="6eb52da6-3380-46e2-a6f7-879072cbad21" name="ContactPersonName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="927edefb-bf39-49f0-8b22-40fade5af189" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="87c24a2b-f49e-41b1-a4f7-1a9d437e0ac9" name="MasterBank" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0b5bce2a-9161-4aa8-8ca4-90bb36eea0e6" />
+        <ownedAttributesInternal>
+          <property Id="4cddbe5a-0514-42f1-ac58-1a1a1526b222" name="BankId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7ada3ccb-6a4a-40a8-8ff7-539cbad0cce6" />
+          </property>
+          <property Id="6f2a2e6e-555c-41b4-b5ad-ac04323698c1" name="BankName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="92d6799c-49ea-4070-829b-3c87ce68ecc4" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="51d08368-ecad-49a5-a4dc-9123f1fc2998" name="Bank" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ebba04ef-95f7-485d-8488-ac961b78eb4a" />
+        <ownedAttributesInternal>
+          <property Id="157fcd04-d3e9-490e-bed6-f878cf7e1071" name="BankId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1432be85-7e27-4bee-93da-0a770c1d0449" />
+          </property>
+          <property Id="7b283ee5-73b9-44d8-82b5-62d9fbba49e1" name="Under" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c51b0f14-65e9-44af-878a-fb2c72b0a5f8" />
+          </property>
+          <property Id="b117e6dd-917b-46b6-88fb-060fc416b61d" name="AreaId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7022f177-24a2-4a0a-85c4-89e7cc408b46" />
+          </property>
+          <property Id="90ea71ba-23b6-4a45-873e-2efdb56e8750" name="OpeningBalance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="83b1f1ad-7d46-4760-a320-f6c60f152e83" />
+          </property>
+          <property Id="8fb6d5c1-435a-4d59-8ba9-3ae246ba47d1" name="CreditType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0e237de8-1c9d-4817-bff8-1091603a677d" />
+          </property>
+          <property Id="fdd662ea-3866-4f94-adb6-92df3c201c38" name="BankAccNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9a476026-d800-4052-a347-c2cd6595e8b3" />
+          </property>
+          <property Id="238b8eef-c96a-4a87-a09d-ecffa481e12f" name="BankAccType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="05905423-a639-4002-97ea-6f17af6ba2be" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e0cde68a-0949-4747-b25e-ec3fcbc5c48e" name="Employee" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b838bb9a-fd01-4e39-847b-082cfef4d3a4" />
+        <ownedAttributesInternal>
+          <property Id="314a1c2d-f9ff-4dc1-9f3e-c771a4023252" name="EmployeeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="59e33bc0-e6d0-4e8f-aa05-997efcb3c369" />
+          </property>
+          <property Id="6756943f-441c-4cb6-a56d-c8a655f7011d" name="Under" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f0d7c1a2-bfb8-48bb-8037-7575bb9c4608" />
+          </property>
+          <property Id="e09bf3d3-918f-467e-a74d-367265697a20" name="AreaId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e2508395-d952-4fd9-be67-fee0059f8291" />
+          </property>
+          <property Id="927c5915-5d68-4c60-8b1b-63915ccf8c34" name="OpeningBalance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="88f1fdbc-0858-47ec-84c6-ac3d81e13608" />
+          </property>
+          <property Id="d869c159-0350-4fe9-8a25-5ba4772cff9a" name="CreditType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="577739bf-cf3e-4fb3-b629-618d67ae0538" />
+          </property>
+          <property Id="c13b4058-7a6a-40c1-944d-f5ccf9143ea9" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="99e40a52-2423-4214-ba5c-1ff3c6de94ee" />
+          </property>
+          <property Id="24782dc8-8a24-4c72-bd29-72063f30a5c9" name="PhoneNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cbf5341b-d6fa-4316-ad54-08beeeeb0b36" />
+          </property>
+          <property Id="65fa4d42-ca32-4c8e-8c62-df63630a40fd" name="MobileNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5b0ba232-7d2c-4af9-9447-10dde27efc02" />
+          </property>
+          <property Id="7e7159b5-ab29-4f87-bcd2-915067ddba2b" name="BankAccNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4b2131d6-679f-4cd8-8787-e2b74eae15eb" />
+          </property>
+          <property Id="94e2703d-0b86-42fe-91b4-98907a1904b5" name="BankAccType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="20bd01f6-be8b-4d31-8d72-d54297142b4c" />
+          </property>
+          <property Id="97e3cacd-3f49-4e64-a1d6-e8934461cf2a" name="Remark" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d693143d-1bba-4ea1-8fc7-6e64cfd05dd1" />
+          </property>
+          <property Id="8a12ec03-d6be-4bbb-a3cb-b1da49c39bef" name="DOB" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fc97dfd4-0f94-4c06-81f1-d4ba345ad538" />
+          </property>
+          <property Id="313be5d0-b385-4070-a41b-10033853aeaf" name="DOJ" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="97b5e523-4570-4aae-9cfe-f8109e730878" />
+          </property>
+          <property Id="61f151ed-a38d-44c2-b68c-399da3c8ddc3" name="Payment" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ec7b6337-ef26-4776-8563-93dd384d78d2" />
+          </property>
+          <property Id="08dd2199-af75-46cc-a85b-b68dfacbc74a" name="Qualification" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6a92e280-d477-4638-bb92-a8cd1e35f597" />
+          </property>
+          <property Id="eb006f81-4c0a-495e-ba06-489bdbf57e4f" name="Designation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e954aa4b-ca28-4b12-b563-335271c86a65" />
+          </property>
+          <property Id="24f7a7b4-a019-4abf-9dc4-a7a651471ca8" name="DepartmentId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4603b2d3-7435-4d78-a72d-690906867c1a" />
+          </property>
+          <property Id="31085c3e-d946-4211-a3e5-298887ddf594" name="Photo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bbe69429-bc6a-4463-a599-659ebf03df46" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f2b5b2bd-074f-43ae-8767-04f885be1465" name="MasterDepartment" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9cd5dd85-9889-46ac-8fa0-ee29486df1e7" />
+        <ownedAttributesInternal>
+          <property Id="88b163af-fa71-4867-a727-b73e39b32209" name="DepartmentId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2e890adf-ed30-4593-acb8-74a1775034c9" />
+          </property>
+          <property Id="3874a5ea-3909-40dd-8218-227230d1c373" name="DepartmentName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3361e371-6d19-4464-8acb-456066a4e5c1" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f5ef958a-ce36-469f-9487-b962e1cd39e2" name="CreditCashPurchase" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c14bfcf9-9481-4c17-a225-b39bbd50093f" />
+        <ownedAttributesInternal>
+          <property Id="235be2ed-019e-4406-9b2c-891928af230a" name="PurchaseId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="45cde3dc-5651-4ef0-bbd3-2c92375226be" />
+          </property>
+          <property Id="36f24365-1292-41fd-8031-1083c668e365" name="PurchaseType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4baa0a59-2941-49a0-a4aa-e04d0adb491c" />
+          </property>
+          <property Id="a6607e14-4863-42b5-bb25-087c950d31ee" name="RefNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="94393b6d-6f37-458e-9ced-6f3f397955b2" />
+          </property>
+          <property Id="e6bf1dee-96c4-44d9-936c-f2d1b0080376" name="BillDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ad63a944-3f43-4492-8e3c-aae309de4faf" />
+          </property>
+          <property Id="d1d5635a-0785-4f57-b16a-b46c321d8047" name="OrderId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4811a77e-b607-4ec1-9837-6e63b7558c52" />
+          </property>
+          <property Id="8cca09c3-1a68-480d-9db6-2f01b3cce01e" name="DCId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="621c0b0d-01c4-4402-8b8f-9e31e5e9424a" />
+          </property>
+          <property Id="381c2055-3bc2-4f42-af8b-e5714bad8985" name="GodownTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cf0114af-3cdc-4557-972b-264b94951706" />
+          </property>
+          <property Id="aba10463-14e2-4a8a-aa53-57180be6489b" name="ItemTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3886f495-c341-4de1-9acb-81836f270f2e" />
+          </property>
+          <property Id="642c38b4-fca6-44c1-b06e-d096519c6e8d" name="ItemId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="25510128-e557-49a3-92d6-c949cde64d90" />
+          </property>
+          <property Id="11a4acdb-4bbe-4717-9901-f24e0b7641d5" name="BatchNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1242c1df-111b-43ef-91bf-2b6d8e8bb155" />
+          </property>
+          <property Id="6d13dae0-ff39-495f-ba3e-ebd046ce45a2" name="ExpiryDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c397b626-cf9f-4021-b861-fa9194643d13" />
+          </property>
+          <property Id="ffdd7079-fe04-4cef-922e-67a60b2f0a30" name="Quantity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f91ed558-4bca-4e29-bd57-a7f8a6921fd2" />
+          </property>
+          <property Id="0ea9e3be-1013-46fc-87dd-e48c5020d6ab" name="PurchasingRate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="12c4cb2b-d2f7-433a-9efb-5db6b7dfb8b0" />
+          </property>
+          <property Id="54deed42-be47-4bcd-8d46-ca94f790061f" name="CashPaid" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c792a49d-c87e-4d5e-9cec-3b4a2d2d8ce9" />
+          </property>
+          <property Id="ba42c9cb-3aea-4e4b-8873-1fe8c97474c9" name="RoundOffValue" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c2ddbd8f-4b91-4aea-8c9b-3445a89d1e00" />
+          </property>
+          <property Id="d391628b-f289-4f23-a940-b6f80ed7388e" name="TotalAmount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3fb25241-b4c8-421a-b12a-897c96c0e54f" />
+          </property>
+          <property Id="2e6b8dc2-4b41-431d-a2a5-828a1119963f" name="GrossAmount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d8cc9d89-1366-4d0e-a9fe-defc326f7752" />
+          </property>
+          <property Id="ee5979f7-85ab-4c87-8740-7adc6c7d525c" name="OrderTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="680308c1-25ef-490c-8039-fcf8db2af0a5" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c2c864fa-df27-494e-a5b7-47fe987b6fd7" name="CreditCashTax" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="427a8bde-edd2-4421-99b9-e03a117fa74f" />
+        <ownedAttributesInternal>
+          <property Id="20fc5f61-6dc0-4b3b-8062-25945b4c2eb2" name="PurchaseSaleId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a5c2d2d0-e078-4db0-945a-ddcf37a0a912" />
+          </property>
+          <property Id="28686b08-47d4-4fc5-8fbd-45fe0b10c8de" name="TaxTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="304f7f20-134b-4328-bd61-158c826045bf" />
+          </property>
+          <property Id="578313fc-1bab-4afb-a942-758d8e020b9e" name="Operation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="254b092f-eb77-4e47-828c-8549c6341e79" />
+          </property>
+          <property Id="a1bcdf40-a325-4744-b9d0-6ccf25bb6cb9" name="Percentage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6f45940d-1222-4558-a4ce-3db2c7cfe377" />
+          </property>
+          <property Id="48828bc5-1721-4c1b-8593-9fc926196b11" name="TaxAmount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="18cc1a0b-f7a0-4bfa-a772-be6928a9dc7a" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bc5d10d4-c87c-4aa1-a82a-3018a6216353" name="MasterTax" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e43212e0-7af9-43bb-9c64-d6b8c50ddd90" />
+        <ownedAttributesInternal>
+          <property Id="9e2e79f9-7742-4de3-8051-634cbecb6117" name="TaxTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9a44c50d-3efc-4395-9787-5074a690fcfa" />
+          </property>
+          <property Id="1c8a38f7-be72-4780-8c5c-6f401c449052" name="TaxTypeName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ab85da95-41a3-4f3e-a572-72cfc726a9d9" />
+          </property>
+          <property Id="1e65b663-326c-42b3-abde-4f81959e1f77" name="TaxPercentage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0f15322a-7cce-4e15-98f2-c366f79a0de2" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="37d6fe7d-57dc-4854-82f8-beae6fb7c199" name="PurchaseSaleOrder" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6277f608-0866-4931-b0b5-e9bc6c20e8e5" />
+        <ownedAttributesInternal>
+          <property Id="5ecc6853-16df-423e-8177-7e05355fbc12" name="OrderId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ab5ef02b-18d4-4577-a319-46ba5720d422" />
+          </property>
+          <property Id="7d043774-4eb0-4c87-a05a-d479d1ceb98a" name="OrderTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="98062a3f-dc55-4079-b593-c4d62ec6fb27" />
+          </property>
+          <property Id="e15feb9c-ae00-4250-afea-dd3492248f51" name="RefNo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bade8956-2e04-49fc-abd5-bbb073cb4475" />
+          </property>
+          <property Id="419ca0d2-e8f5-4535-a81a-56e6501bb15c" name="OrderDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e3b05659-d98a-4bfb-8d77-a029ef542ecb" />
+          </property>
+          <property Id="28910c7a-5f68-4614-a72a-f9015604d932" name="SupplierCustomerId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f2cd381c-696a-47d3-9875-11dc68b32d81" />
+          </property>
+          <property Id="3243b350-b580-4a52-a98a-08c0bbe09fb0" name="ItemTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="525508a9-a4f0-4e7e-98d2-6f5e4b48c792" />
+          </property>
+          <property Id="e2227558-f486-4eb1-ab36-804b3439a838" name="ItemId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="afe8659b-1dab-48e6-9ae4-8b5496f67a67" />
+          </property>
+          <property Id="a5fb23f4-fa7e-4551-9892-5d10af278002" name="Quantity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f81d6497-b659-4a27-ace7-b70860717698" />
+          </property>
+          <property Id="0acfe7c0-b736-4251-968e-01e135e20288" name="Rate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ffd9a302-0a44-4dd4-8d97-a6a2ca7269ff" />
+          </property>
+          <property Id="3ad004ac-2178-4c37-9d5c-c1086bbdd70e" name="TotalAmount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="00c3d414-e2ce-4f14-97fc-194da87e8de6" />
+          </property>
+          <property Id="0fe6c010-b752-41b4-8b0b-2aa76285b6a2" name="GrossAmount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f4d9fc0b-6058-4a83-adec-8e275d205df9" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="63a7ba79-30df-4779-9114-2e795a12aadf" name="ERPModeling">
+    <elementDefinition Id="005e2c37-8343-4a05-87d2-7b4f9e3b8d64" />
+  </package>
+</logicalClassDesignerModel>
