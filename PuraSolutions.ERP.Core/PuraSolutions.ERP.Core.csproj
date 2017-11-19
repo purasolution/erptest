@@ -43,6 +43,23 @@
   <ItemGroup>
     <Compile Include="Business\BaseBusinessService.cs" />
     <Compile Include="Business\IBusinessService.cs" />
+    <Compile Include="Models\Bank.cs" />
+    <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\CreditCashPurchase.cs" />
+    <Compile Include="Models\CreditCashTax.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\MasterArea.cs" />
+    <Compile Include="Models\MasterBank.cs" />
+    <Compile Include="Models\MasterCompany.cs" />
+    <Compile Include="Models\MasterCustomer.cs" />
+    <Compile Include="Models\MasterDepartment.cs" />
+    <Compile Include="Models\MasterGodownType.cs" />
+    <Compile Include="Models\MasterItem.cs" />
+    <Compile Include="Models\MasterItemType.cs" />
+    <Compile Include="Models\MasterStock.cs" />
+    <Compile Include="Models\MasterSupplier.cs" />
+    <Compile Include="Models\MasterTax.cs" />
+    <Compile Include="Models\PurchaseSaleOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\BaseAdoRepository.cs" />
     <Compile Include="Repository\BaseEFRepository.cs" />
@@ -50,9 +67,7 @@
     <Compile Include="Utility\BaseAdoUtility.cs" />
     <Compile Include="Utility\IAdoUtility.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
